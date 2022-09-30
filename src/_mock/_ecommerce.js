@@ -4,7 +4,7 @@ import _mock from './_mock';
 
 const COUNTRY = ['de', 'en', 'fr', 'kr', 'us'];
 
-const CATEGORY = ['CAP', 'Branded Shoes', 'Headphone', 'Cell Phone', 'Earings'];
+const CATEGORY = ['CNS', 'CNS Stimulants', 'Hallucinogens', 'Dissociative Anesthetics', 'Inhalants'];
 
 const PRODUCT_NAME = [
   'Maxilase',
