@@ -37,7 +37,7 @@ export default function EcommerceSaleByGender() {
   const theme = useTheme();
 
   const chartOptions = merge(BaseOptionChart(), {
-    labels: ['Mens', 'Womens'],
+    labels: ['Central Pharmacy', 'Manufactories'],
     legend: { floating: true, horizontalAlign: 'center' },
     fill: {
       type: 'gradient',
@@ -81,7 +81,7 @@ export default function EcommerceSaleByGender() {
 
   return (
     <Card>
-      <CardHeader title="Sale By Gender" />
+      <CardHeader title="Drugs Providers" />
       <ChartWrapperStyle dir="ltr">
         <ReactApexChart type="radialBar" series={CHART_DATA} options={chartOptions} height={310} />
       </ChartWrapperStyle>

@@ -29,15 +29,14 @@ export default function EcommerceBestSalesman() {
 
   return (
     <Card>
-      <CardHeader title="Best Salesman" sx={{ mb: 3 }} />
+      <CardHeader title="Best Dispensary" sx={{ mb: 3 }} />
       <Scrollbar>
         <TableContainer sx={{ minWidth: 720 }}>
           <Table>
             <TableHead>
               <TableRow>
                 <TableCell>Seller</TableCell>
-                <TableCell>Product</TableCell>
-                <TableCell>Country</TableCell>
+                <TableCell>Drug Type</TableCell>
                 <TableCell>Total</TableCell>
                 <TableCell align="right">Rank</TableCell>
               </TableRow>
@@ -57,9 +56,6 @@ export default function EcommerceBestSalesman() {
                     </Box>
                   </TableCell>
                   <TableCell>{row.category}</TableCell>
-                  <TableCell>
-                    <Image src={row.flag} alt="country flag" sx={{ maxWidth: 28 }} />
-                  </TableCell>
                   <TableCell>{fCurrency(row.total)}</TableCell>
                   <TableCell align="right">
                     <Label

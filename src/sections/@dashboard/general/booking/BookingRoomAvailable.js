@@ -8,6 +8,8 @@ import { Card, CardHeader, Stack, Box, Typography } from '@mui/material';
 import { fNumber } from '../../../../utils/formatNumber';
 //
 import { BaseOptionChart } from '../../../../components/chart';
+import { ProductTableRow, ProductTableToolbar } from '../../e-commerce/product-list';
+
 
 // ----------------------------------------------------------------------
 
@@ -41,7 +43,7 @@ export default function BookingRoomAvailable() {
           name: { offsetY: -16 },
           value: { offsetY: 8 },
           total: {
-            label: 'Rooms',
+            label: 'Drugs',
             formatter: () => fNumber(186),
           },
         },
@@ -51,7 +53,8 @@ export default function BookingRoomAvailable() {
 
   return (
     <Card>
-      <CardHeader title="Room Available" sx={{ mb: 8 }} />
+      <CardHeader title="Drugs Availability" sx={{ mb: 8 }} />
+      <ProductTableToolbar />
       <ReactApexChart type="radialBar" series={CHART_DATA} options={chartOptions} height={310} />
 
       <Stack spacing={2} sx={{ p: 5 }}>

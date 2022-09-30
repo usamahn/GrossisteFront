@@ -43,7 +43,7 @@ const _mock = {
   image: {
     cover: (index) => `https://minimal-assets-api.vercel.app/assets/images/covers/cover_${index + 1}.jpg`,
     feed: (index) => `https://minimal-assets-api.vercel.app/assets/images/feeds/feed_${index + 1}.jpg`,
-    product: (index) => `https://minimal-assets-api.vercel.app/assets/images/products/product_${index + 1}.jpg`,
+    product: (index) => `https://www.raps.org/getmedia/f5398da1-b8d0-40e1-badb-2d1bae497e11/medicine-pills-and-bottles-stock-image.jpg.aspx?width=2121&height=1414&ext=.jpg?maxsidesize=100`,
     avatar: (index) => `https://minimal-assets-api.vercel.app/assets/images/avatars/avatar_${index + 1}.jpg`,
   },
 };

@@ -7,11 +7,11 @@ const COUNTRY = ['de', 'en', 'fr', 'kr', 'us'];
 const CATEGORY = ['CAP', 'Branded Shoes', 'Headphone', 'Cell Phone', 'Earings'];
 
 const PRODUCT_NAME = [
-  'Small Granite Computer',
-  'Small Rubber Mouse',
-  'Awesome Rubber Hat',
-  'Sleek Cotton Sausages',
-  'Rustic Wooden Chicken',
+  'Maxilase',
+  'Doliprane',
+  'Gripex',
+  'Inflamyle',
+  'Physiol'
 ];
 
 export const _ecommerceSalesOverview = [...Array(3)].map((_, index) => ({

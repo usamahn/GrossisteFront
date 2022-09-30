@@ -17,6 +17,29 @@ import {
   EcommerceLatestProducts,
   EcommerceCurrentBalance,
 } from '../../sections/@dashboard/general/e-commerce';
+import {
+  AnalyticsTasks,
+  AnalyticsNewsUpdate,
+  AnalyticsOrderTimeline,
+  AnalyticsCurrentVisits,
+  AnalyticsWebsiteVisits,
+  AnalyticsTrafficBySite,
+  AnalyticsWidgetSummary,
+  AnalyticsCurrentSubject,
+  AnalyticsConversionRates,
+} from '../../sections/@dashboard/general/analytics';
+
+import {
+  BookingDetails,
+  BookingBookedRoom,
+  BookingTotalIncomes,
+  BookingRoomAvailable,
+  BookingNewestBooking,
+  BookingWidgetSummary,
+  BookingCheckInWidgets,
+  BookingCustomerReviews,
+  BookingReservationStats,
+} from '../../sections/@dashboard/general/booking';
 
 // ----------------------------------------------------------------------
 
@@ -27,18 +50,32 @@ export default function GeneralEcommerce() {
   return (
     <Page title="General: E-commerce">
       <Container maxWidth={themeStretch ? false : 'xl'}>
-        <Grid container spacing={3}>
-          <Grid item xs={12} md={8}>
+
+          <Grid item xs={12} md={12}>
             <EcommerceWelcome />
           </Grid>
+          <br/>
+          <Grid container spacing={3}>
+          <Grid item xs={12} sm={6} md={4}>
+            <AnalyticsWidgetSummary title="Weekly Sales" total={714000} icon={'ant-design'} />
+          </Grid>
 
-          <Grid item xs={12} md={4}>
-            <EcommerceNewProducts />
+          <Grid item xs={12} sm={6} md={4}>
+            <AnalyticsWidgetSummary title="Drugs in Stock" total={1352831} color="info" icon={'ant-design'} />
+          </Grid>
+
+          <Grid item xs={12} sm={6} md={4}>
+            <AnalyticsWidgetSummary
+              title="Drugs Orders"
+              total={1723315}
+              color="warning"
+              icon={'ant-design'}
+            />
           </Grid>
 
           <Grid item xs={12} md={4}>
             <EcommerceWidgetSummary
-              title="Product Sold"
+              title="Drugs Sold"
               percent={2.6}
               total={765}
               chartColor={theme.palette.primary.main}
@@ -61,7 +98,7 @@ export default function GeneralEcommerce() {
               title="Sales Profit"
               percent={0.6}
               total={4876}
-              chartColor={theme.palette.chart.red[0]}
+              chartColor={theme.palette.primary.main}
               chartData={[40, 70, 75, 70, 50, 28, 7, 64, 38, 27]}
             />
           </Grid>
@@ -75,20 +112,12 @@ export default function GeneralEcommerce() {
           </Grid>
 
           <Grid item xs={12} md={6} lg={8}>
-            <EcommerceSalesOverview />
+            <BookingRoomAvailable />
           </Grid>
-
-          <Grid item xs={12} md={6} lg={4}>
-            <EcommerceCurrentBalance />
-          </Grid>
-
-          <Grid item xs={12} md={6} lg={8}>
-            <EcommerceBestSalesman />
-          </Grid>
-
           <Grid item xs={12} md={6} lg={4}>
             <EcommerceLatestProducts />
           </Grid>
+         
         </Grid>
       </Container>
     </Page>
