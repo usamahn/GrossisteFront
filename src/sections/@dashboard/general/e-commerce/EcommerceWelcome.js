@@ -32,7 +32,7 @@ export default function EcommerceWelcome() {
         }}
       >
         <Typography gutterBottom variant="h4">
-          Welcome to your Analytic Dashboard
+          Welcome to your Dashboard
         </Typography>
 
         <Typography variant="body2" sx={{ pb: { xs: 3, xl: 5 }, maxWidth: 480, mx: 'auto' }}>
